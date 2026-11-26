@@ -1,0 +1,23 @@
+# Start closed and include only the scene runtime.
+**
+!Dockerfile
+!requirements-scene.txt
+!scene_app.py
+!game/
+!game/**
+!scene_web/
+!scene_web/**
+!assets/
+!assets/**
+
+# These remain excluded even if found beneath an allowed directory.
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+**/.env
+**/.env.*
+**/.local/
+**/*.key
+**/*.pem
+**/*credential*.json
+**/*secret*.json

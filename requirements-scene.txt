@@ -1,0 +1,4 @@
+# 场景版及魔搭 Docker 部署依赖；不安装旧版 Gradio 界面。
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+cryptography>=44,<51

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#252824">
+  <title>六魂新朝 · 宫墙之内</title>
+  <link rel="stylesheet" href="/styles.css?v=byok-v1">
+  <script src="/story-markdown.js?v=story-v3" defer></script>
+  <script src="/ai-settings.js?v=byok-v1" defer></script>
+  <script src="/app.js?v=byok-v1" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="六魂新朝首页"><span class="brand-seal">六</span><span><strong>六魂新朝</strong><small>宫墙之内，人人有局</small></span></a>
+      <span class="chapter" id="chapter">宫门将启</span>
+      <nav class="top-actions" aria-label="游戏记录"><button type="button" data-open="suspects">嫌疑板 <span id="foundCount">0/6</span></button><button type="button" data-open="ledger">史书</button><button type="button" data-open="more" aria-label="更多：局势、名录和重新开始">更多 ···</button></nav>
+    </header>
+    <section class="ai-settings" id="aiSettings" aria-label="AI 模式设置">
+      <div class="ai-mode-summary"><div class="ai-mode-heading"><span class="ai-mode-dot" aria-hidden="true"></span><strong id="aiModeTitle">离线模式</strong><span id="aiKeyHint" class="ai-key-hint" hidden></span></div><p id="aiModeDescription">可以完整游玩；角色使用预设对白，尚未开启 AI 自主对话。</p><small id="aiUsage" hidden></small></div>
+      <div class="ai-config-area">
+        <form id="aiConfigForm" class="ai-config-form" autocomplete="off">
+          <div class="ai-input-row">
+            <label class="ai-provider-field"><span class="sr-only">模型服务商</span><select id="aiProvider" aria-label="模型服务商" disabled><option value="deepseek">DeepSeek</option></select></label>
+            <label class="ai-model-field"><span class="sr-only">模型</span><select id="aiModel" aria-label="模型" disabled><option value="">正在加载模型…</option></select></label>
+            <label class="ai-key-field"><span class="sr-only">API Key</span><input id="aiApiKey" type="password" placeholder="输入你的 API Key" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="2048" aria-describedby="aiPrivacyNote aiFeedback" required disabled></label>
+            <button type="submit" class="primary" id="aiEnable" disabled>开启 AI 模式</button>
+          </div>
+          <div class="ai-form-meta"><label class="ai-remember"><input id="aiRemember" type="checkbox" disabled>在此浏览器记住密钥</label><button type="button" class="ai-text-action" id="aiCancel" hidden>取消更换</button></div>
+          <p class="ai-privacy-note" id="aiPrivacyNote">使用你自己的模型额度，验证连接会产生少量消耗。密钥经游戏服务器代调，不写入游戏存档或应用日志。</p>
+          <p class="ai-provider-note" id="aiProviderNote" hidden></p>
+        </form>
+        <div class="ai-config-actions" id="aiConfigActions" hidden><button type="button" class="ai-text-action" id="aiEdit">更换配置</button><button type="button" class="ai-text-action" id="aiResume" hidden>恢复 AI 模式</button><button type="button" class="ai-text-action" id="aiOffline" hidden>切回离线</button><button type="button" class="ai-text-action" id="aiForget" hidden>删除密钥</button></div>
+        <p class="ai-feedback" id="aiFeedback" role="status" aria-live="polite" hidden></p>
+      </div>
+    </section>
+    <div class="mode-banner" id="modeBanner" role="status" hidden></div>
+    <main id="main">
+      <div class="turn-bar"><ol class="phase-track" id="phaseTrack" aria-label="本幕进度"></ol><div class="turn-status"><div class="throne-risk" id="throneRisk" aria-label="皇位风险"></div><div class="energy" id="energy" aria-label="今日精力"></div></div></div>
+      <section class="scene" id="scene" aria-label="当前宫廷场景">
+        <div class="scene-photo" id="scenePhoto"></div><div class="scene-wash"></div><div class="scene-grain"></div>
+        <header class="scene-header"><div><span class="eyebrow" id="phaseLabel">第一幕 · 宫中议事</span><h1 id="locationName">内殿议事</h1></div><button type="button" id="placeSwitch" data-open="places" hidden>换个地方 <span>↗</span></button></header>
+        <div class="scene-caption" id="sceneCaption"><span class="chapter-mark">序</span><h2>皇子高热，<br>宫灯未熄。</h2><p>朕的朝堂里，混进了六个 AI。找出他们，守住皇位与实权。</p></div>
+        <div class="cast" id="cast"></div>
+        <div class="scene-notices" id="sceneNotices"></div>
+        <section class="dialogue" aria-label="剧情对白"><div class="dialogue-heading"><span class="speaker" id="speakerName">旁白</span><span class="speaker-tone" id="speakerTone" hidden></span><span class="dialogue-progress" id="dialogueProgress"></span></div><p id="dialogueText" aria-live="polite">皇子高热未退，内殿传来急报。两种救治办法，正等你裁决。</p><button type="button" class="dialogue-next" id="dialogueNext">继续故事 <span>↓</span></button></section>
+      </section>
+      <section class="next-step" aria-label="当前目标"><div class="goal"><span class="goal-dot"></span><div><small id="goalLabel">此刻，你要做的事</small><p id="goalText">听完争论，选择你支持的提案。</p></div></div><div class="step-actions" id="stepActions"></div></section>
+      <div class="quiet-footer"><span id="tutorialTip"></span><button type="button" data-open="help">怎么玩？</button></div>
+    </main>
+    <div class="scrim" id="scrim" hidden></div>
+    <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1" hidden><header class="sheet-head"><div><span class="eyebrow" id="sheetKicker">宫中事务</span><h2 id="sheetTitle">案上奏折</h2></div><button type="button" class="icon-button" id="sheetClose" aria-label="关闭弹窗">×</button></header><div class="sheet-body" id="sheetBody"></div></section>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div><div class="busy-indicator" id="busyIndicator" role="status" hidden><span></span>宫中正在落笔…</div>
+  </div>
+</body>
+</html>

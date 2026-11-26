@@ -1,0 +1,337 @@
+{
+  "version": 3,
+  "notes": "Transparent individual portrait PNGs are used directly in scenes. Legacy sheet and crop coordinates are retained only as source records.",
+  "sheets": {
+    "consorts_01_04.png": {
+      "width": 1536,
+      "height": 1024,
+      "columns": 4,
+      "portraitHeight": 940
+    },
+    "consorts_05_08.png": {
+      "width": 1577,
+      "height": 997,
+      "columns": 4,
+      "portraitHeight": 925
+    },
+    "consorts_09_11.png": {
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "portraitHeight": 940
+    },
+    "consorts_12_14.png": {
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "portraitHeight": 940
+    }
+  },
+  "consorts": [
+    {
+      "slot": "01",
+      "rank": "皇后",
+      "style": "金黄",
+      "portrait": "portraits/consort_01.png",
+      "sheet": "consorts_01_04.png",
+      "column": 0,
+      "columnCount": 4,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "02",
+      "rank": "皇贵妃",
+      "style": "朱红",
+      "portrait": "portraits/consort_02.png",
+      "sheet": "consorts_01_04.png",
+      "column": 1,
+      "columnCount": 4,
+      "crop": {
+        "x": 384,
+        "y": 0,
+        "width": 384,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "03",
+      "rank": "贵妃",
+      "style": "紫棠",
+      "portrait": "portraits/consort_03.png",
+      "sheet": "consorts_01_04.png",
+      "column": 2,
+      "columnCount": 4,
+      "crop": {
+        "x": 768,
+        "y": 0,
+        "width": 384,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "04",
+      "rank": "贵妃",
+      "style": "宝蓝",
+      "portrait": "portraits/consort_04.png",
+      "sheet": "consorts_01_04.png",
+      "column": 3,
+      "columnCount": 4,
+      "crop": {
+        "x": 1152,
+        "y": 0,
+        "width": 384,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "05",
+      "rank": "妃",
+      "style": "翡翠",
+      "portrait": "portraits/consort_05.png",
+      "sheet": "consorts_05_08.png",
+      "column": 0,
+      "columnCount": 4,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 394,
+        "height": 925
+      },
+      "portraitHeightFraction": 0.92778
+    },
+    {
+      "slot": "06",
+      "rank": "妃",
+      "style": "海棠",
+      "portrait": "portraits/consort_06.png",
+      "sheet": "consorts_05_08.png",
+      "column": 1,
+      "columnCount": 4,
+      "crop": {
+        "x": 394,
+        "y": 0,
+        "width": 394,
+        "height": 925
+      },
+      "portraitHeightFraction": 0.92778
+    },
+    {
+      "slot": "07",
+      "rank": "妃",
+      "style": "月白",
+      "portrait": "portraits/consort_07.png",
+      "sheet": "consorts_05_08.png",
+      "column": 2,
+      "columnCount": 4,
+      "crop": {
+        "x": 788,
+        "y": 0,
+        "width": 395,
+        "height": 925
+      },
+      "portraitHeightFraction": 0.92778
+    },
+    {
+      "slot": "08",
+      "rank": "妃",
+      "style": "玄墨",
+      "portrait": "portraits/consort_08.png",
+      "sheet": "consorts_05_08.png",
+      "column": 3,
+      "columnCount": 4,
+      "crop": {
+        "x": 1183,
+        "y": 0,
+        "width": 394,
+        "height": 925
+      },
+      "portraitHeightFraction": 0.92778
+    },
+    {
+      "slot": "09",
+      "rank": "嫔",
+      "style": "藕荷",
+      "portrait": "portraits/consort_09.png",
+      "sheet": "consorts_09_11.png",
+      "column": 0,
+      "columnCount": 3,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "10",
+      "rank": "嫔",
+      "style": "天青",
+      "portrait": "portraits/consort_10.png",
+      "sheet": "consorts_09_11.png",
+      "column": 1,
+      "columnCount": 3,
+      "crop": {
+        "x": 512,
+        "y": 0,
+        "width": 512,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "11",
+      "rank": "嫔",
+      "style": "柳绿",
+      "portrait": "portraits/consort_11.png",
+      "sheet": "consorts_09_11.png",
+      "column": 2,
+      "columnCount": 3,
+      "crop": {
+        "x": 1024,
+        "y": 0,
+        "width": 512,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "12",
+      "rank": "嫔",
+      "style": "杏黄",
+      "portrait": "portraits/consort_12.png",
+      "sheet": "consorts_12_14.png",
+      "column": 0,
+      "columnCount": 3,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "13",
+      "rank": "嫔",
+      "style": "珊瑚橘",
+      "portrait": "portraits/consort_13.png",
+      "sheet": "consorts_12_14.png",
+      "column": 1,
+      "columnCount": 3,
+      "crop": {
+        "x": 512,
+        "y": 0,
+        "width": 512,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    },
+    {
+      "slot": "14",
+      "rank": "嫔",
+      "style": "茶褐",
+      "portrait": "portraits/consort_14.png",
+      "sheet": "consorts_12_14.png",
+      "column": 2,
+      "columnCount": 3,
+      "crop": {
+        "x": 1024,
+        "y": 0,
+        "width": 512,
+        "height": 940
+      },
+      "portraitHeightFraction": 0.91797
+    }
+  ],
+  "characters": {
+    "emperor": {
+      "label": "皇帝",
+      "portrait": "portraits/role_emperor.png"
+    },
+    "heir_son": {
+      "label": "皇子",
+      "portrait": "portraits/role_prince.png"
+    },
+    "heir_daughter": {
+      "label": "公主",
+      "portrait": "portraits/role_princess.png"
+    },
+    "empress_dowager": {
+      "label": "太后",
+      "portrait": "portraits/role_empress_dowager.png"
+    },
+    "chief_eunuch": {
+      "label": "总管太监",
+      "portrait": "portraits/role_chief_eunuch.png"
+    },
+    "chief_maid": {
+      "label": "掌事宫女",
+      "portrait": "portraits/role_chief_maid.png"
+    },
+    "palace_steward": {
+      "label": "内务府管事",
+      "portrait": "portraits/role_household_steward.png"
+    },
+    "physician": {
+      "label": "御医",
+      "portrait": "portraits/role_physician.png"
+    },
+    "guard_captain": {
+      "label": "侍卫统领",
+      "portrait": "portraits/role_guard_commander.png"
+    },
+    "minister": {
+      "label": "军机朝臣",
+      "portrait": "portraits/role_grand_councillor.png"
+    }
+  },
+  "archetypes": {
+    "宫女": {
+      "portrait": "portraits/role_chief_maid.png"
+    },
+    "宦官": {
+      "portrait": "portraits/role_chief_eunuch.png"
+    },
+    "太医": {
+      "portrait": "portraits/role_physician.png"
+    },
+    "heir": {
+      "portrait": "portraits/role_prince.png"
+    }
+  },
+  "rooms": {
+    "queen": "room_queen.png",
+    "imperial_noble": "room_imperial_noble.png",
+    "noble": "room_noble.png",
+    "consort": "room_consort.png",
+    "concubine": "room_concubine.png"
+  },
+  "initial_consort_ids": [
+    "consort_01",
+    "consort_02",
+    "consort_03",
+    "consort_04",
+    "consort_05",
+    "consort_07",
+    "consort_08",
+    "consort_09",
+    "consort_12",
+    "consort_13"
+  ],
+  "reserve_consort_ids": [
+    "consort_06",
+    "consort_10",
+    "consort_11",
+    "consort_14"
+  ]
+}
